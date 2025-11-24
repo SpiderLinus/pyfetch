@@ -69,3 +69,68 @@ if shutil.which("nix-env"):
     system_reader()
     print(packs + " | " +  userpacks + " Pkgs (nix)")
 
+
+if shutil.which("flatpak"):
+
+    output = subprocess.check_output(["flatpak", "list"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (flatpak)")
+
+
+if shutil.which("brew"):
+
+    output = subprocess.check_output(["brew", "list"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (brew)")
+
+
+if shutil.which("snap"):
+
+    output = subprocess.check_output(["snap", "list"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (snap)")
+
+
+if shutil.which("xbps-query"):
+
+    output = subprocess.check_output(["xbps-query", "-l"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (void)")
+
+
+if shutil.which("apk"):
+
+    output = subprocess.check_output(["apk", "info"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (apk)")
+
+
+if shutil.which("qlist"):
+
+    output = subprocess.check_output(["qlist", "-I"])
+    output = output.decode()
+    packages = len(output.splitlines())
+    packs = str(packages)
+
+    system_reader()
+    print(packs + " Pkgs (gentoo)")
