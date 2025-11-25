@@ -11,15 +11,11 @@ def system_reader():
 
     if platform.system() == "Linux":
         print(platform.system() + " | " + platform.release())
-        print("--------------------")
         print(distro.name(pretty=True) + " | " + platform.machine() )
-        print("--------------------")
         
     else:
         print(platform.system() + " | " + platform.release())
-        print("--------------------")
         print(platform.machine())
-        print("--------------------")
 
 
 if shutil.which("pacman"):
@@ -77,7 +73,7 @@ if shutil.which("flatpak"):
     packages = len(output.splitlines())
     packs = str(packages)
 
-    system_reader()
+
     print(packs + " Pkgs (flatpak)")
 
 

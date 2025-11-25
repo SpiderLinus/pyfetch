@@ -2,7 +2,7 @@ import os
 import sys
 
 from modules import playerctl
-from modules import os
+# from modules import sys_info
 from modules import network
 from modules import ram
 from modules import gpu
@@ -13,7 +13,12 @@ with open("pyfetch.txt") as logo:
 
 def Pyfetch():
     
-    print("OS:", sys.platform)
-    print(playerctl.PlayerStatus)
+    print("-------------------------------------")
+
+    print("Os:", sys.platform)
+    print("Hostname:", network.hostname())
+    print("Ip:", network.ipv4())
+    
+    print("Playerctl:", playerctl.PlayerStatus())
 
 Pyfetch()

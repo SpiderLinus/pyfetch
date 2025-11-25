@@ -20,7 +20,7 @@ def PlayerStatus():
     with open("data/title_data.txt", "r") as file:
         MetaTitle = file.read().strip()
         
-    print(MetaArtist + " - " + MetaTitle + " " + "("+MetaStatus+")")
+    return(MetaArtist + " - " + MetaTitle + " " + "("+MetaStatus+")")
 
 versions = [
     "v0.5.0", "v0.6.0", "v0.6.1", "v2.0.1", "v2.0.2",
@@ -36,5 +36,3 @@ def PlayerDebug():
         print("Playerctl up to date")
     else:
         print("Playerctl is outdated")
-
-PlayerStatus()
