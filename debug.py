@@ -1,5 +1,4 @@
 # Read file from root
 
-file = open("version_playerctl.txt")
-
-print(file.read())
+with open("pyfetch.txt") as f:
+    print(f.read())

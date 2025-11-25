@@ -29,6 +29,3 @@ def PlayerDebug():
     else:
         print("Playerctl is outdated")
 
-
-PlayerDebug()
-PlayerStatus()

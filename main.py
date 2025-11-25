@@ -1,19 +1,20 @@
 import os
 import sys
 
-#from modules import playerctl
-# from modules import os
+from modules import distro
+from modules import playerctl
+#from modules import os
 from modules import network
 from modules import ram
 from modules import gpu
 from modules import cpu
 
+with open("pyfetch.txt") as logo:
+        print(logo.read())
+
 def Pyfetch():
-    if(sys.platform == "linux"):
-        print("Do you want to install all dependencies? ")
-        if(input() == "y"):
-            os.system("nix-shell -p python313Packages.python")
-        else:
-            print("Exiting...")
+    
+    print("OS:", sys.platform)
+    print(playerctl.PlayerStatus)
 
 Pyfetch()
