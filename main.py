@@ -8,7 +8,8 @@ from modules import ram
 from modules import gpu
 from modules import cpu
 
-with open("pyfetch.txt") as logo:
+
+with open("pyfetch.txt", "r") as logo:
         print(logo.read())
 
 def Pyfetch():
