@@ -4,11 +4,15 @@
 
 ## ⚙️ Install
 
-### Debian & Arch 
+### Debian & Arch etc
 
 ```
-git clone https://github.com/SpiderLinus/pyfetch && cd pyfetch && bash install.sh
+git clone https://github.com/SpiderLinus/pyfetch && cd pyfetch
 ```
+```
+chmod +x install.sh && ./install.sh
+```
+
 
 ### Nixos:
 ```
@@ -50,7 +54,7 @@ If you want to modify this program you can simply do so in the modules folder an
 ## 👷‍♂️ To-Do
 - [x] Ascii logos
 - [ ] All working modules
-- [ ] Install Script
+- [x] Install Script
 - [x] Be able to customize using config.json
 
 
