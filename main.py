@@ -36,6 +36,7 @@ def Pyfetch():
         "os": lambda: sys.platform,
         "hostname": network.hostname,
         "ipv4": lambda: "".join(network.ipv4()),
+        "ipv6": lambda: "".join(network.ipv6()),
         "playerctl": playerctl.PlayerStatus
     
     }
