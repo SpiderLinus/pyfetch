@@ -5,7 +5,7 @@ import sys
 from core.config_loader import loader
 from core.renderer import render
 
-from modules import playerctl, network
+from modules import playerctl, network, sys_info
 
 
 def ascii_loader(name, width=50, color=True):
@@ -37,7 +37,8 @@ def Pyfetch():
         "hostname": network.hostname,
         "ipv4": lambda: "".join(network.ipv4()),
         "ipv6": lambda: "".join(network.ipv6()),
-        "playerctl": playerctl.PlayerStatus
+        "playerctl": playerctl.PlayerStatus,
+        "sysinfo": sys_info.main(),
     
     }
 
