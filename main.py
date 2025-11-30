@@ -27,7 +27,7 @@ def Pyfetch():
     config = loader()
 
     logos = ascii_loader(
-        config.get("logo", "nixos"),
+        config.get("logo", "linux"),
         width=config.get("logo_width", 50),
         color=config.get("logo_color", True)
     )
