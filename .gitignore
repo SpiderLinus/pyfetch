@@ -5,3 +5,6 @@ data/hostname_data.txt
 data/ipv4_data.txt
 data/ipv6_data.txt
 data/ascii_logo.txt
+data/artist_data.txt
+data/title_data.txt
+data/status_data.txt
