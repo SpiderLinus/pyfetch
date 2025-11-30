@@ -2,7 +2,7 @@ import os
 import sys
 
 def hostname():
-    os.system("hostname > data/hostname_data.txt")
+    os.system("uname -n > data/hostname_data.txt")
     with open("data/hostname_data.txt", "r") as file:
         host = file.read().strip()
         return host

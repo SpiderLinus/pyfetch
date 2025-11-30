@@ -1,10 +1,10 @@
 {
 
- "logo": "freebsd",
+ "logo": "arch",
  "logo_width": 50,
  "logo_color": true,
 
 
- "modules": [ "os", "hostname", "ipv4", "playerctl" ]
+ "modules": [ "os", "hostname", "ipv4", "playerctl", "sysinfo" ]
 
 }
