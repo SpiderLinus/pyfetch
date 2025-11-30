@@ -6,5 +6,5 @@
 
 
  "modules": [ "os", "architecture", "kernel", "packages", "hostname", "ipv4", "playerctl" ]
-
+ 
 }
