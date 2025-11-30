@@ -69,8 +69,8 @@ esac
 
 
 if [ "$DISTRO" != "nixos" ]; then
-    echo "Maing command named pyfetch"
-    sudo cp pyfetch /usr/local/bin/pfetch
+    echo "Making command named pyfetch"
+    sudo cp pyfetch /usr/local/bin/pyfetch
     sudo chmod +x /usr/local/bin/pyfetch
     echo "pyfetch installed"
 else
