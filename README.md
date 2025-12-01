@@ -10,7 +10,7 @@
 git clone https://github.com/SpiderLinus/pyfetch && cd pyfetch
 ```
 ```
-chmod +x install.sh && ./install.sh
+chmod +x install.sh && bash install.sh
 ```
 
 
@@ -24,8 +24,36 @@ nix profile install .#
 ---
 
 ## ⚒️ Modding
-If you want to modify this program you can simply do so in the modules folder and in the main.py file. We are currently working on a feature that lets you configure it by using the config.json file but that isn't out yet so stay tuned ;)
+If you want to modify this program you can simply do so in the ```config.json``` and in the ```main.py``` file. 
 
+#### Example config.json
+You can change the logo to 20 different ascii logos. Check the logos directory for usable logos. You can also add your own by adding any png file to the logos directory. In the ```config.json``` you simply change the logo value to your desired logo. 
+
+You can also add modules. The current modules that work are:
+- os
+- architecture
+- kernel
+- packages
+- hostname
+- ipv4
+- ipv6
+- playerctl
+
+If you want a specific module you can create an issue or simply make a commit to our repository :)
+```
+{
+
+ "logo": "linux",
+ "logo_width": 50,
+ "logo_color": true,
+
+
+ "modules": [ "os", "architecture", "kernel", "packages", "hostname", "ipv4", "playerctl" ]
+ 
+}
+```
+---
+#### File Structure
 ```
 [scorpion@nixos:~/Projects/pyfetch]$ tree
 .
