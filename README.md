@@ -6,10 +6,10 @@
 
 ### Debian & Arch etc
 
-```
+```bash
 git clone https://github.com/SpiderLinus/pyfetch && cd pyfetch
 ```
-```
+```bash
 chmod +x install.sh && bash install.sh
 ```
 
@@ -40,7 +40,7 @@ You can also add modules. The current modules that work are:
 - playerctl
 
 If you want a specific module you can create an issue or simply make a commit to our repository :)
-```
+```json
 {
 
  "logo": "linux",
@@ -55,7 +55,6 @@ If you want a specific module you can create an issue or simply make a commit to
 ---
 #### File Structure
 ```
-[scorpion@nixos:~/Projects/pyfetch]$ tree
 .
 ├── config.json
 ├── core
